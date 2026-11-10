@@ -1,1 +1,1 @@
-## Sql Practice
+## Code Practice

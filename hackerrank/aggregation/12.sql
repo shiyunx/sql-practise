@@ -1,4 +1,5 @@
 /*
+https://www.hackerrank.com/challenges/weather-observation-station-18/problem?isFullScreen=true
 Weather Observation Station 18
 
 Consider P1(a, b) and P2(c, d) to be two points on a 2D plane.

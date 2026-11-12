@@ -1,4 +1,5 @@
 /*
+https://www.hackerrank.com/challenges/occupations/problem?isFullScreen=true
 Occupations
 
 Pivot the Occupation column in OCCUPATIONS so that each Name is sorted alphabetically and displayed underneath its corresponding Occupation. The output should consist of four columns (Doctor, Professor, Singer, and Actor) in that specific order, with their respective names listed alphabetically under each column.

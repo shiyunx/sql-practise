@@ -1,4 +1,5 @@
 /*
+https://www.hackerrank.com/challenges/select-by-id/problem?isFullScreen=true
 Select By ID
 
 Query all columns for a city in CITY with the ID 1661.

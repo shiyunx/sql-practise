@@ -1,4 +1,5 @@
 /*
+https://www.hackerrank.com/challenges/the-pads/problem?isFullScreen=true
 The PADS
 
 Generate the following two result sets:

@@ -1,4 +1,5 @@
 /*
+https://www.hackerrank.com/challenges/the-company/problem?isFullScreen=true
 New Companies
 
 Amber's conglomerate corporation just acquired some new companies. Each of the companies follows this hierarchy:

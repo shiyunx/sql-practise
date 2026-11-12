@@ -5,8 +5,8 @@ Given the CITY and COUNTRY tables, query the names of all cities where the CONTI
 Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
 */
 
-SELECT CITY.NAME
-FROM CITY
-JOIN COUNTRY
-    ON CITY.COUNTRYCODE = COUNTRY.CODE
-WHERE COUNTRY.CONTINENT = 'Africa';
+select city.name
+from city
+join country
+    on city.countrycode = country.code
+where country.continent = 'africa';

@@ -5,22 +5,22 @@ Pivot the Occupation column in OCCUPATIONS so that each Name is sorted alphabeti
 Note: Print NULL when there are no more names corresponding to an occupation.
 */
 
-WITH cte AS (
-    SELECT
-        Name,
-        Occupation,
-        ROW_NUMBER() OVER (
-            PARTITION BY Occupation
-            ORDER BY Name
-        ) AS rn
-    FROM OCCUPATIONS
+with cte as (
+    select
+        name,
+        occupation,
+        row_number() over (
+            partition by occupation
+            order by name
+        ) as rn
+    from occupations
 )
 
-SELECT
-    MAX(CASE WHEN Occupation = 'Doctor' THEN Name END) AS Doctor,
-    MAX(CASE WHEN Occupation = 'Professor' THEN Name END) AS Professor,
-    MAX(CASE WHEN Occupation = 'Singer' THEN Name END) AS Singer,
-    MAX(CASE WHEN Occupation = 'Actor' THEN Name END) AS Actor
-FROM cte
-GROUP BY rn
-ORDER BY rn;
+select
+    max(case when occupation = 'doctor' then name end) as doctor,
+    max(case when occupation = 'professor' then name end) as professor,
+    max(case when occupation = 'singer' then name end) as singer,
+    max(case when occupation = 'actor' then name end) as actor
+from cte
+group by rn
+order by rn;

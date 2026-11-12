@@ -9,9 +9,9 @@ Consider P1(a, b) and P2(c, d) to be two points on a 2D plane.
 Query the Manhattan Distance between points P1 and P2 and round it to a scale of 4 decimal places.
 */
 
-SELECT ROUND(
-    ABS(MAX(LAT_N) - MIN(LAT_N))
-    + ABS(MAX(LONG_W) - MIN(LONG_W)),
+select round(
+    abs(max(lat_n) - min(lat_n))
+    + abs(max(long_w) - min(long_w)),
     4
 )
-FROM STATION;
+from station;

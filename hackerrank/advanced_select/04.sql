@@ -9,12 +9,12 @@ Leaf: If node is leaf node.
 Inner: If node is neither root nor leaf node.
 */
 
-SELECT
-    N,
-    CASE
-        WHEN P IS NULL THEN 'Root'
-        WHEN N NOT IN (SELECT P FROM BST WHERE P IS NOT NULL) THEN 'Leaf'
-        ELSE 'Inner'
-    END AS node_type
-FROM BST
-ORDER BY N;
+select
+    n,
+    case
+        when p is null then 'root'
+        when n not in (select p from bst where p is not null) then 'leaf'
+        else 'inner'
+    end as node_type
+from bst
+order by n;

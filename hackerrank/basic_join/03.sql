@@ -5,10 +5,10 @@ Given the CITY and COUNTRY tables, query the names of all the continents (COUNTR
 Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
 */
 
-SELECT
-    COUNTRY.Continent,
-    FLOOR(AVG(CITY.Population)) AS average_population
-FROM CITY
-JOIN COUNTRY
-    ON CITY.CountryCode = COUNTRY.Code
-GROUP BY COUNTRY.Continent;
+select
+    country.continent,
+    floor(avg(city.population)) as average_population
+from city
+join country
+    on city.countrycode = country.code
+group by country.continent;

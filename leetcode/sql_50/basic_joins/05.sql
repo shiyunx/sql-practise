@@ -68,12 +68,12 @@ Machine 1's average time is ((1.550 - 0.550) + (1.420 - 0.430)) / 2 = 0.995
 Machine 2's average time is ((4.512 - 4.100) + (5.000 - 2.500)) / 2 = 1.456
 */
 
-SELECT a.machine_id,
-ROUND(AVG(b.timestamp - a.timestamp), 3) AS processing_time
-FROM Activity a
-JOIN Activity b
-ON a.machine_id = b.machine_id
-AND a.process_id = b.process_id
-WHERE a.activity_type = 'start'
-AND b.activity_type = 'end'
-GROUP BY a.machine_id;
+select a.machine_id,
+round(avg(b.timestamp - a.timestamp), 3) as processing_time
+from activity a
+join activity b
+on a.machine_id = b.machine_id
+and a.process_id = b.process_id
+where a.activity_type = 'start'
+and b.activity_type = 'end'
+group by a.machine_id;

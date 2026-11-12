@@ -5,5 +5,5 @@ Samantha was tasked with calculating the average monthly salaries for all employ
 Write a query calculating the amount of error (i.e.: actual - miscalculating average monthly salaries), and round it up to the next integer.
 */
 
-SELECT CEIL(AVG(Salary) - AVG(REPLACE(Salary, '0', '')))
-FROM EMPLOYEES;
+select ceil(avg(salary) - avg(replace(salary, '0', '')))
+from employees;

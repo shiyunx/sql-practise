@@ -78,9 +78,9 @@ User 7 made 3 requests and all were confirmed. The confirmation rate is 1.
 User 2 made 2 requests where one was confirmed and the other timed out. The confirmation rate is 1 / 2 = 0.5.
 */
 
-SELECT s.user_id,
-ROUND(SUM(CASE WHEN c.action = 'confirmed' THEN 1 ELSE 0 END) / COUNT(*), 2) AS confirmation_rate
-FROM Signups s
-LEFT JOIN Confirmations c
-ON s.user_id = c.user_id
-GROUP BY s.user_id;
+select s.user_id,
+round(sum(case when c.action = 'confirmed' then 1 else 0 end) / count(*), 2) as confirmation_rate
+from signups s
+left join confirmations c
+on s.user_id = c.user_id
+group by s.user_id;

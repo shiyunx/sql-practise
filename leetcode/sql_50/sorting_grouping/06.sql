@@ -68,11 +68,11 @@ Output:
 Explanation: There are no single numbers in the input table so we return null.
 */
 
-WITH largest_single_number AS (
-    SELECT num
-    FROM MyNumbers
-    GROUP BY num
-    HAVING COUNT(*) = 1
-)
-SELECT MAX(num) AS num
-FROM largest_single_number;
+select max(num) as num
+from mynumbers
+where num in (
+    select num
+    from mynumbers
+    group by num
+    having count(num) = 1
+);

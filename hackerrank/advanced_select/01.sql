@@ -8,11 +8,11 @@ Scalene: It's a triangle with  sides of differing lengths.
 Not A Triangle: The given values of A, B, and C don't form a triangle.
 */
 
-SELECT
-    CASE
-        WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle'
-        WHEN A = B AND B = C THEN 'Equilateral'
-        WHEN A = B OR B = C OR A = C THEN 'Isosceles'
-        ELSE 'Scalene'
-    END AS triangle_type
-FROM TRIANGLES;
+select
+    case
+        when a + b <= c or a + c <= b or b + c <= a then 'not a triangle'
+        when a = b and b = c then 'equilateral'
+        when a = b or b = c or a = c then 'isosceles'
+        else 'scalene'
+    end as triangle_type
+from triangles;

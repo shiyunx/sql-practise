@@ -51,7 +51,7 @@ Explanation:
 - Computer has 1 student, so we do not include it.
 */
 
-SELECT class
-FROM Courses
-GROUP BY class
-HAVING COUNT(student) >= 5;
+select class
+from courses
+group by class
+having count(student) >= 5;

@@ -43,13 +43,13 @@ Explanation:
 Only the player with id 1 logged back in after the first day he had logged in so the answer is 1/3 = 0.33
 */
 
-SELECT ROUND( COUNT(*) / (SELECT COUNT(DISTINCT player_id) FROM Activity),2 ) AS fraction
-FROM (
-    SELECT player_id, MIN(event_date) AS first_date
-    FROM Activity
-    GROUP BY player_id
-) AS a1
-  
-JOIN Activity AS a2
-ON a1.player_id = a2.player_id
-AND DATEDIFF(a2.event_date, a1.first_date) = 1;
+select round( count(*) / (select count(distinct player_id) from activity), 2 ) as fraction
+from (
+    select player_id, min(event_date) as first_date
+    from activity
+    group by player_id
+) as a1
+
+join activity as a2
+on a1.player_id = a2.player_id
+and datediff(a2.event_date, a1.first_date) = 1;

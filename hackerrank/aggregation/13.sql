@@ -5,13 +5,13 @@ Consider P1(a, c) and P2 (b, d) to be two points on a 2D plane where (a, b) are 
 Query the Euclidean Distance between points P1 and P2 and format your answer to display 4 decimal digits.
 */
 
-SELECT
-    ROUND(
-        SQRT(
-            POWER(MAX(LAT_N) - MIN(LAT_N), 2)
+select
+    round(
+        sqrt(
+            power(max(lat_n) - min(lat_n), 2)
             +
-            POWER(MAX(LONG_W) - MIN(LONG_W), 2)
+            power(max(long_w) - min(long_w), 2)
         ),
         4
     )
-FROM STATION;
+from station;

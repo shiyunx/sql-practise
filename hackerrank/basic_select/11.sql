@@ -4,10 +4,10 @@ Weather Observation Station 6
 Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
 */
 
-SELECT DISTINCT CITY
-FROM STATION
-WHERE CITY LIKE 'A%'
-   OR CITY LIKE 'E%'
-   OR CITY LIKE 'I%'
-   OR CITY LIKE 'O%'
-   OR CITY LIKE 'U%';
+select distinct city
+from station
+where city like 'a%'
+   or city like 'e%'
+   or city like 'i%'
+   or city like 'o%'
+   or city like 'u%';

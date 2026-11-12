@@ -54,9 +54,9 @@ The customer id 4 has a first order with delivery id 7 and it is immediate.
 Hence, half the customers have immediate first orders.
 */
 
-SELECT ROUND(SUM(order_date = customer_pref_delivery_date) * 100.0 / COUNT(*), 2) AS immediate_percentage
-FROM Delivery
-WHERE (customer_id, order_date) IN (SELECT customer_id, MIN(order_date)
-FROM Delivery
-GROUP BY customer_id
+select round(sum(order_date = customer_pref_delivery_date) * 100.0 / count(*), 2) AS immediate_percentage
+from delivery
+where (customer_id, order_date) in (select customer_id, min(order_date)
+from delivery
+group by customer_id
 );

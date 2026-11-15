@@ -2,7 +2,7 @@
 
 https://8weeksqlchallenge.com/case-study-1/
 
-<img src="./diagram1.png"
+<img src="./diagram.png"
      alt="case1"
      style="width: 70%; max-width: 500px; display: block; margin: 1rem auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 

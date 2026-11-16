@@ -17,8 +17,8 @@ https://8weeksqlchallenge.com/case-study-2/
 
 > customer_orders table
 
-| order_id | customer_id | pizza_id | exclusions | extras | order_time           |
-|----------|-------------|----------|------------|--------|----------------------|
+| order_id | customer_id | pizza_id | exclusions | extras | order_time          |
+|----------|-------------|----------|------------|--------|---------------------|
 | 1        | 101         | 1        |            |        | 2021-01-01 18:05:02 |
 | 2        | 101         | 1        |            |        | 2021-01-01 19:00:52 |
 | 3        | 102         | 1        |            |        | 2021-01-02 23:51:23 |

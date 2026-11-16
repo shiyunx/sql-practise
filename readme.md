@@ -1,10 +1,10 @@
 ## Sql Practise
 
-Sql exercises from different platforms to practise sql skills.
+This repository includes my solutions to exercises from different sql learning platforms.
 
-1. hackerrank
-2. leetcode
-3. sql challenges
+1. Hackerrank
+2. Leetcode
+3. Sql challenges
 
 
 

@@ -1,6 +1,6 @@
 ## Sql Practise
 
-This repository includes my solutions to exercises from different sql learning platforms.
+This repository contains sql exercises from different learning platforms.
 
 1. Hackerrank
 2. Leetcode

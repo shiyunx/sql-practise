@@ -1,4 +1,4 @@
-## SQL Problems
+## Sql Problems
 
 This repository includes sql problems from different learning platforms.
 

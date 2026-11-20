@@ -1,10 +1,7 @@
-## Sql Practise
+## SQL Problems
 
-This repository contains sql exercises from different learning platforms.
+This repository includes sql problems from different learning platforms.
 
-1. Hackerrank
-2. Leetcode
-3. Sql challenges
-
-
-
+1. HackerRank
+2. LeetCode
+3. SQL Challenges
